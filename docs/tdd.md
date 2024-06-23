@@ -6,8 +6,13 @@ header: "TDD and BDD"
 footer: "Asepnur"
 ---
 
-# Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
+# Tema 
 
+Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
+
+--- 
+
+# Brief
 1. **Pengantar TDD**
    - Apa itu TDD?
    - Sejarah dan Evolusi
@@ -16,7 +21,9 @@ footer: "Asepnur"
 2. **Prinsip-prinsip TDD**
    - Siklus Red-Green-Refactor
    - Menulis Tes yang Efektif
+---
 
+# Brief (Continue)
 3. **Manfaat TDD**
    - Kualitas Kode
    - Dokumentasi
@@ -28,6 +35,9 @@ footer: "Asepnur"
    - Mengimplementasikan Kode
    - Refactoring
 
+---
+
+# Brief (Continue)
 5. **Konsep TDD Lanjutan**
    - Mocking dan Stubbing
    - Menguji Kode Asinkron
@@ -40,9 +50,9 @@ footer: "Asepnur"
 
 ---
 
-## 1. Pengantar TDD
+# 1. Pengantar TDD
 
-### Apa itu TDD?
+## Apa itu TDD?
 - **Definisi**: 
 	- TDD adalah pendekatan software development di mana tes ditulis sebelum menulis program/kode.
 	- Jadi, kita pastikan program/kode kita sesuai dengan yang diharapkan dari tes.
@@ -55,7 +65,7 @@ footer: "Asepnur"
 	- Mengarhkan ke kode atau struktur kode yang lebih baik.
 	- Menambah produktivitas (di awal akan lebih memakan waktu).
 
-### TDD vs. Tes Tradisional
+## TDD vs. Tes Tradisional
 - **Pengujian Tradisional**: Kode dulu, tes kemudian.
 - **TDD**
 	- Tes dulu, baru kode. Ini bikin kode kita selalu teruji dan sesuai dengan kebutuhan.
@@ -63,7 +73,7 @@ footer: "Asepnur"
 
 ---
 
-## 2. Prinsip-prinsip TDD
+# 2. Prinsip-prinsip TDD
 
 ### Siklus Red-Green-Refactor
 1. **Red**: Tulis tes yang gagal, Menulis tes.
@@ -79,7 +89,7 @@ footer: "Asepnur"
 
 ---
 
-## 3. Manfaat TDD
+# 3. Manfaat TDD
 
 ### Kualitas Kode
 - Kode jadi lebih teruji.
@@ -97,7 +107,7 @@ footer: "Asepnur"
 
 ---
 
-## 4. Alur Kerja TDD dalam Go (Golang)
+# 4. Alur Kerja TDD dalam Go (Golang)
 
 ### Menyiapkan Proyek Go untuk TDD
 ```bash
@@ -107,7 +117,7 @@ go mod init tdd-example
 
 ```
 ---
-## 5. Konsep TDD Lanjutan
+# 5. Konsep TDD Lanjutan
 ### Mocking dan Stubbing
 - Mocks: Buat simulasi perilaku objek nyata.
 - Stubs: Memberikan respons yang sudah ditentukan buat panggilan fungsi.
@@ -130,8 +140,8 @@ Pastikan sistem bekerja secara keseluruhan.
 
 
 
-6. Studi Kasus dan Praktik Terbaik
-Contoh Dunia Nyata
+# 6. Studi Kasus dan Praktik Terbaik
+## Contoh Dunia Nyata
 Bagikan contoh dari proyek sukses yang pake TDD.
 Diskusikan gimana TDD meningkatkan hasil proyek.
 Kesalahan Umum dan Cara Menghindarinya
