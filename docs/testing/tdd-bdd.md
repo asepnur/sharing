@@ -29,26 +29,31 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
    - Dokumentasi
    - Peningkatan Desain
 
-4. **Alur Kerja TDD dalam Go (Golang)**
-   - Menyiapkan Proyek Go untuk TDD
-   - Menulis Tes Pertama
-   - Mengimplementasikan Kode
-   - Refactoring
+4. **Contoh Kecil TDD (Golang)**
+   - Contoh TDD 
 
 ---
 
 5. **Konsep TDD Lanjutan**
    - Mocking dan Stubbing
-   - Menguji Kode Asinkron
    - Pengujian Integrasi
 
-6. **Studi Kasus dan Praktik Terbaik**
-   - Contoh Dunia Nyata
+6. **Kesalahan dan Tips untuk Menguasai TDD**
    - Kesalahan Umum dan Cara Menghindarinya
    - Tips untuk TDD yang Efektif
 
 ---
+7. **BDD**
+   - Definisi BDD
+   - Gherkin Language
+   - Contoh BDD
+---
+8. **TDD x BDD**
+   - Perbedaan
+   - Apakah bisa dikombinasikan?
+   - Contoh Real usecase
 
+---
 # 1. Pengantar TDD
 
 ## Apa itu TDD?
@@ -73,14 +78,14 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 - **Pengujian Tradisional**: Kode dulu, tes kemudian.
 - **TDD**
 	- Tes dulu, baru kode. Ini bikin kode kita selalu teruji dan sesuai dengan kebutuhan.
-	- Bukan hanya fokus pada tes, tapi juga pada aspek lain pada development proses.
+	- Bukan hanya fokus pada tes, tapi juga pada aspek lain pada development proses (design pattern, koloborasi antar tim, dll)
 
 ---
 
 # 2. Prinsip-prinsip TDD
 
 ### Siklus Red-Green-Refactor
-1. **Red**: Tulis tes yang gagal, Menulis tes.
+1. **Red**: Tulis tes yang gagal, Menulis tes pertama.
 2. **Green**: Tulis kode seminimal mungkin buat lulus tes.
 3. **Refactor**: Perbaiki kode tanpa ubah perilaku.
   - **Referensi**: Martin, R.C. (2008). *Clean Code: A Handbook of Agile Software Craftsmanship*. Prentice Hall.
@@ -91,6 +96,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 - **Sederhana dan Jelas**: Tes harus mudah dibaca dan dipahami.
 - **Terisolasi**: Setiap tes fokus pada satu perilaku atau fungsionalitas.
 - **Dapat Diulang**: Tes harus selalu menghasilkan hasil yang sama.
+- **Hindari Pengulangan**: Pengulangan tes yang tidak perlu akan menambah kerumitan tes.
   - **Referensi**: Freeman, S., & Pryce, N. (2009). *Growing Object-Oriented Software, Guided by Tests*. Addison-Wesley.
 
 ---
@@ -100,6 +106,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 ### Kualitas Kode
 - Kode jadi lebih teruji.
 - Mengurangi bug dan kesalahan.
+- Lebih percaya diri untuk melakukan perubahan kode.
   - **Referensi**: Erdogmus, H., Morisio, M., & Torchiano, M. (2005). "On the effectiveness of the test-first approach to programming". IEEE Transactions on Software Engineering, 31(3), 226-237.
 
 ---
@@ -117,16 +124,14 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 
 ---
 
-# 4. Alur Kerja TDD dalam Go (Golang)
+# 4. Contoh Kecil TDD (Golang)
 
-### Menyiapkan Proyek Go untuk TDD
-```bash
-mkdir tdd-example
-cd tdd-example
-go mod init tdd-example
-
-```
-
+### Contoh TDD 
+- Spek: Buatkan fungsi untuk memvalidasi Authentikasi
+- Kriteria:
+   - Fungsi menerima username dan password
+   - Hanya akan berjalan jika keduanya ada
+- [Let's Cook!](https://github.com/asepnur/sharing/tree/main/example/testing/tdd).
 ---
 
 # 5. Konsep TDD Lanjutan
@@ -137,32 +142,14 @@ go mod init tdd-example
 
 ---
 
-### Menguji Kode Asinkron
-Gunakan channel dan goroutine di Go buat uji kode asinkron.
-Contoh:
-```go
-Salin kode
-func TestAsyncFunction(t *testing.T) {
-    result := make(chan int)
-    go AsyncFunction(result)
-    if res := <-result; res != expectedValue {
-        t.Errorf("expected %d but got %d", expectedValue, res)
-    }
-}
-```
----
-
 ## Pengujian Integrasi
 - Uji interaksi antara berbagai bagian sistem.
 - Pastikan sistem bekerja secara keseluruhan.
+- Lebih baik dikombinasikan dengan BDD.
 
 ---
 
-# 6. Studi Kasus dan Praktik Terbaik
-## Contoh Dunia Nyata
-
-- Bagikan contoh dari proyek sukses yang pake TDD.
-- Diskusikan gimana TDD meningkatkan hasil proyek.
+# 6. Kesalahan dan Tips untuk Menguasai TDD 
 ## Kesalahan Umum dan Cara Menghindarinya
 - Nulis tes yang terlalu kompleks.
 - Mengabaikan refactoring setelah tes lulus.
@@ -175,7 +162,54 @@ func TestAsyncFunction(t *testing.T) {
 - Tingkatkan kompleksitas secara bertahap.
 - Terus refactor kode.
 ---
+# 7. BDD: Pengembangan Berbasis Perilaku
+## Apa Itu BDD?
+Behavior-Driven Development (BDD) adalah proses pengembangan perangkat lunak yang berfokus pada sudut pandang pengguna dengan menggunakan bahasa yang mudah dipahami orang awam untuk mendorong kolaborasi antara pengembang, QA, dan pemangku kepentingan non-teknis.
+- Meningkatkan komunikasi dan pemahaman.
+- Berfokus pada perilaku yang diharapkan dari perangkat lunak.
+- Diperkenalkan oleh Dan North.
 
+---
+
+## Konsep Utama BDD
+- **Kolaborasi**: Melibatkan semua pemangku kepentingan
+- **Bahasa Umum**: Menggunakan Gherkin untuk menulis tes
+- **Spesifikasi yang Dapat Dieksekusi**: Tes otomatis dan dapat dijalankan
+- **Dokumentasi**: Tes berfungsi sebagai dokumentasi yang hidup
+
+---
+
+## Bahasa Gherkin
+Gherkin adalah bahasa spesifik domain yang dapat dibaca oleh bisnis.
+- Digunakan untuk menulis cerita pengguna dan skenario
+- Mengikuti format sederhana
+
+---
+
+## Sintaks Gherkin
+- **Fitur**: Menjelaskan fitur yang diuji
+- **Skenario**: Menjelaskan kasus uji spesifik
+- **Given**: Menetapkan konteks awal
+- **When**: Menjelaskan tindakan atau peristiwa
+- **Then**: Menjelaskan hasil yang diharapkan
+
+---
+
+### Contoh:
+```gherkin
+Feature: Registrasi Pengguna
+
+Scenario: Registrasi berhasil dengan Email/Kata Sandi
+  Given seorang pengguna dengan nama pengguna "testuser" dan kata sandi "password"
+  When pengguna mendaftar dengan email dan kata sandi
+  Then registrasi harus berhasil
+```
+---
+# 8. **TDD x BDD**
+## Perbedaan
+## Apakah bisa dikombinasikan?
+## Contoh Real usecase
+- [Let's Cook!](https://github.com/asepnur/sharing/tree/main/example/testing/combine).
 # Terima kasih
 
 ---

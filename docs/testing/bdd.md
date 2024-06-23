@@ -1,33 +1,49 @@
-# What is BDD?
-Behavior-Driven Development (BDD) is a software development process that encourages collaboration among developers, QA, and non-technical stakeholders.
-- Enhances communication and understanding
-- Focuses on the expected behavior of the software
+---
+marp: true
+paginate: true
+theme: default
+header: "TDD dan BDD"
+backgroundImage: url('https://marp.app/assets/hero-background.svg')
+---
 
+# Apa Itu BDD?
+Behavior-Driven Development (BDD) adalah proses pengembangan perangkat lunak yang berfokus pada sudut pandang pengguna dengan menggunakan bahasa yang mudah dipahami orang awam untuk mendorong kolaborasi antara pengembang, QA, dan pemangku kepentingan non-teknis.
+- Meningkatkan komunikasi dan pemahaman.
+- Berfokus pada perilaku yang diharapkan dari perangkat lunak.
+- Diperkenalkan oleh Dan North.
 
-# Key Concepts of BDD
-- **Collaboration**: Involves all stakeholders
-- **Common Language**: Uses Gherkin for writing tests
-- **Executable Specifications**: Tests are automated and executable
-- **Documentation**: Tests serve as living documentation
+---
 
-# The Gherkin Language
-Gherkin is a business-readable, domain-specific language.
-- Used for writing user stories and scenarios
-- Follows a simple format
+# Konsep Utama BDD
+- **Kolaborasi**: Melibatkan semua pemangku kepentingan
+- **Bahasa Umum**: Menggunakan Gherkin untuk menulis tes
+- **Spesifikasi yang Dapat Dieksekusi**: Tes otomatis dan dapat dijalankan
+- **Dokumentasi**: Tes berfungsi sebagai dokumentasi yang hidup
 
-# Gherkin Syntax
-- **Feature**: Describes the feature being tested
-- **Scenario**: Describes a specific test case
-- **Given**: Sets up the initial context
-- **When**: Describes an action or event
-- **Then**: Describes the expected outcome
+---
 
-Example:
+# Bahasa Gherkin
+Gherkin adalah bahasa spesifik domain yang dapat dibaca oleh bisnis.
+- Digunakan untuk menulis cerita pengguna dan skenario
+- Mengikuti format sederhana
+
+---
+
+# Sintaks Gherkin
+- **Fitur**: Menjelaskan fitur yang diuji
+- **Skenario**: Menjelaskan kasus uji spesifik
+- **Given**: Menetapkan konteks awal
+- **When**: Menjelaskan tindakan atau peristiwa
+- **Then**: Menjelaskan hasil yang diharapkan
+
+---
+
+### Contoh:
 ```gherkin
-Feature: User Registration
+Feature: Registrasi Pengguna
 
-Scenario: Successful registration with Email/Password
-  Given a user with username "testuser" and password "password"
-  When the user registers with email and password
-  Then the registration should be successful
-
+Scenario: Registrasi berhasil dengan Email/Kata Sandi
+  Given seorang pengguna dengan nama pengguna "testuser" dan kata sandi "password"
+  When pengguna mendaftar dengan email dan kata sandi
+  Then registrasi harus berhasil
+```
