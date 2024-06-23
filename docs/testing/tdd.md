@@ -1,21 +1,21 @@
 ---
-theme: gaia
+theme: default 
 _class: lead
 paginate: true
 backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.svg')
-header: "Konsep TDD & BDD"
+header: "TDD & BDD"
 ---
 
 # Tema 
-
-Pengembangan Berbasis Tes dan Perilaku - TDD & BDD
+Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 
 --- 
 
-# Brief of TDD
+# Lingkup Materi
 1. **Pengantar TDD**
    - Apa itu TDD?
+   - Tujuan dari TDD
    - TDD vs. Pengujian Tradisional
 
 2. **Prinsip-prinsip TDD**
@@ -63,7 +63,7 @@ Pengembangan Berbasis Tes dan Perilaku - TDD & BDD
 	- Memastikan semua kode yang ditulis lulus tes dan sesuai ekspektasi.
 	- Bugs atau kesalahan logika bisa ditemukan lebih awal.
 	- Membantu membentuk budaya refactor dan melakukannya menjadi lebih percaya diri.
-	- Tidak prone to error.
+	- Kode tidak rentan terhadap error. 
 	- Mengarahkan ke kode atau struktur kode yang lebih baik.
 	- Menambah produktivitas (di awal akan lebih memakan waktu).
 
