@@ -3,7 +3,7 @@ package handler
 import (
 	"context"
 
-	"github.com/asepnur/sharing/tdd/example/account/model"
+	"github.com/asepnur/sharing/example/testing/combine/account/core/model"
 )
 
 type AccountHandler interface {
@@ -19,9 +19,9 @@ func NewAccountHandler() AccountHandler {
 }
 
 func (a *accountHandlerDependency) Register(ctx context.Context, account *model.Account) error {
-	return nil
+	panic("not implemented") // TODO: Implement
 }
 
 func (a *accountHandlerDependency) Authenticate(ctx context.Context, account *model.Account) error {
-	return nil
+	panic("not implemented")
 }

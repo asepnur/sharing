@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/asepnur/sharing/tdd/example/account/handler"
-	"github.com/asepnur/sharing/tdd/example/account/model"
+	"github.com/asepnur/sharing/example/testing/combine/account/core/model"
+	"github.com/asepnur/sharing/example/testing/combine/account/handler"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
@@ -60,13 +60,13 @@ var _ = Describe("AuthService", func() {
 			Expect(err).To(BeNil())
 		})
 
-		// It("should return an error if the credentials are incorrect", func() {
-		// 	account := &model.Account{
-		// 		Username: "authenticate_user_2",
-		// 		Password: "wrongpass",
-		// 	}
-		// 	err := accountHandler.Authenticate(context.Background(), account)
-		// 	Expect(err).ToNot(BeNil())
-		// })
+		It("should return an error if the credentials are incorrect", func() {
+			account := &model.Account{
+				Username: "authenticate_user_2",
+				Password: "wrongpass",
+			}
+			err := accountHandler.Authenticate(context.Background(), account)
+			Expect(err).ToNot(BeNil())
+		})
 	})
 })

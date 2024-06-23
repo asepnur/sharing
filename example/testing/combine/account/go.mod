@@ -1,4 +1,4 @@
-module github.com/asepnur/sharing/tdd/example/account
+module github.com/asepnur/sharing/example/testing/combine/account
 
 go 1.20
 
@@ -11,6 +11,7 @@ require (
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/go-logr/logr v1.4.1 // indirect
 	github.com/go-task/slim-sprig/v3 v3.0.0 // indirect
+	github.com/golang/mock v1.6.0 // indirect
 	github.com/google/go-cmp v0.6.0 // indirect
 	github.com/google/pprof v0.0.0-20240424215950-a892ee059fd6 // indirect
 	github.com/nxadm/tail v1.4.8 // indirect

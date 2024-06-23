@@ -2,7 +2,7 @@
 marp: true
 paginate: true
 theme: default
-header: "TDD and BDD"
+header: "TDD dan BDD"
 footer: "Asepnur"
 ---
 
