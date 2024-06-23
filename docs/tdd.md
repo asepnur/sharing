@@ -75,7 +75,7 @@
 1. **Red**: Tulis tes yang gagal, Menulis tes.
 2. **Green**: Tulis kode seminimal mungkin buat lulus tes.
 3. **Refactor**: Perbaiki kode tanpa ubah perilaku.
-  - **Referensi**: Martin, R.C. (2008). *Clean Code: A Handbook of Agile Software Craftsmanship*. Prentice Hall.
+    - **Referensi**: Martin, R.C. (2008). Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall.
 
 ---
 
@@ -83,7 +83,7 @@
 - **Sederhana dan Jelas**: Tes harus mudah dibaca dan dipahami.
 - **Terisolasi**: Setiap tes fokus pada satu perilaku atau fungsionalitas.
 - **Dapat Diulang**: Tes harus selalu menghasilkan hasil yang sama.
-  - **Referensi**: Freeman, S., & Pryce, N. (2009). *Growing Object-Oriented Software, Guided by Tests*. Addison-Wesley.
+    - **Referensi**: Freeman, S., & Pryce, N. (2009). Growing Object-Oriented Software, Guided by Tests. Addison-Wesley.
 
 ---
 
@@ -92,7 +92,7 @@
 ### Kualitas Kode
 - Kode jadi lebih teruji.
 - Mengurangi bug dan kesalahan.
-  - **Referensi**: Erdogmus, H., Morisio, M., & Torchiano, M. (2005). "On the effectiveness of the test-first approach to programming". IEEE Transactions on Software Engineering, 31(3), 226-237.
+    - **Referensi**: Erdogmus, H., Morisio, M., & Torchiano, M. (2005). "On the effectiveness of the test-first approach to programming". IEEE Transactions on Software Engineering, 31(3), 226-237.
 
 ---
 
@@ -105,4 +105,4 @@
 ### Peningkatan Desain
 - Mendorong praktik desain yang lebih baik.
 - Membantu identifikasi dan perbaikan masalah desain lebih awal.
-  - **Referensi**: Beck, K. (2002). *Test-Driven Development by Example*. Addison-Wesley.
+    - **Referensi**: Beck, K. (2002). Test-Driven Development by Example. Addison-Wesley.
