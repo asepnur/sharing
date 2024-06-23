@@ -4,7 +4,7 @@ _class: lead
 paginate: true
 backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.svg')
-header: "Concept of TDD & BDD"
+header: "Konsep TDD & BDD"
 ---
 
 # Tema 
@@ -16,7 +16,6 @@ Pengembangan Berbasis Tes dan Perilaku - TDD & BDD
 # Brief of TDD
 1. **Pengantar TDD**
    - Apa itu TDD?
-   - Sejarah dan Evolusi
    - TDD vs. Pengujian Tradisional
 
 2. **Prinsip-prinsip TDD**
@@ -56,7 +55,7 @@ Pengembangan Berbasis Tes dan Perilaku - TDD & BDD
 - **Definisi**: 
 	- TDD adalah pendekatan software development di mana tes ditulis sebelum menulis program/kode.
 	- Jadi, kita pastikan program/kode kita sesuai dengan yang diharapkan dari tes.
-	- TDD menulis testing di awal.
+	- TDD menjadikan testing sebagain prinsip untuk membuat sebuah program atau kode.
 
 ---
 
