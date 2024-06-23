@@ -1,9 +1,10 @@
 ---
-marp: true
+theme: gaia
+_class: lead
 paginate: true
-theme: default
-header: "TDD dan BDD"
-footer: "Asepnur"
+backgroundColor: #fff
+backgroundImage: url('https://marp.app/assets/hero-background.svg')
+header: "Concept of TDD & BDD"
 ---
 
 # Tema 
