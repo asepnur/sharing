@@ -1,11 +1,3 @@
----
-marp: true
-paginate: true
-theme: default
-header: "My Presentation"
-footer: "Footer Text"
----
-
 # Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
 
 1. **Pengantar TDD**
@@ -129,16 +121,17 @@ Uji interaksi antara berbagai bagian sistem.
 Pastikan sistem bekerja secara keseluruhan.
 
 
-
-6. Studi Kasus dan Praktik Terbaik
-Contoh Dunia Nyata
+--- 
+# 6. Studi Kasus dan Praktik Terbaik
+## Contoh Dunia Nyata
 Bagikan contoh dari proyek sukses yang pake TDD.
 Diskusikan gimana TDD meningkatkan hasil proyek.
 Kesalahan Umum dan Cara Menghindarinya
 Nulis tes yang terlalu kompleks.
 Mengabaikan refactoring setelah tes lulus.
 Referensi: Martin, R.C. (2008). Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall.
-Tips untuk TDD yang Efektif
+
+## Tips untuk TDD yang Efektif
 Mulai dengan tes kecil dan sederhana.
 Tingkatkan kompleksitas secara bertahap.
 Terus refactor kode.
