@@ -137,24 +137,24 @@ func TestAsyncFunction(t *testing.T) {
 ```
 ---
 ## Pengujian Integrasi
-Uji interaksi antara berbagai bagian sistem.
-Pastikan sistem bekerja secara keseluruhan.
+- Uji interaksi antara berbagai bagian sistem.
+- Pastikan sistem bekerja secara keseluruhan.
 
 ---
 # 6. Studi Kasus dan Praktik Terbaik
 ## Contoh Dunia Nyata
 
-Bagikan contoh dari proyek sukses yang pake TDD.
-Diskusikan gimana TDD meningkatkan hasil proyek.
-Kesalahan Umum dan Cara Menghindarinya
-Nulis tes yang terlalu kompleks.
-Mengabaikan refactoring setelah tes lulus.
-Referensi: Martin, R.C. (2008). Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall.
+- Bagikan contoh dari proyek sukses yang pake TDD.
+- Diskusikan gimana TDD meningkatkan hasil proyek.
+## Kesalahan Umum dan Cara Menghindarinya
+- Nulis tes yang terlalu kompleks.
+- Mengabaikan refactoring setelah tes lulus.
+   - **Referensi**: Martin, R.C. (2008). Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall.
 ---
 
 ## Tips untuk TDD yang Efektif
-Mulai dengan tes kecil dan sederhana.
-Tingkatkan kompleksitas secara bertahap.
-Terus refactor kode.
+- Mulai dengan tes kecil dan sederhana.
+- Tingkatkan kompleksitas secara bertahap.
+- Terus refactor kode.
 ---
 # Terima kasih
