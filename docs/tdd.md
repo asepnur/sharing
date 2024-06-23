@@ -8,7 +8,8 @@ footer: "Asepnur"
 
 # Tema 
 
-Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
+Pengembangan Berbasis Tes dan Perilaku - TDD & BDD
+
 --- 
 
 # Brief of TDD
@@ -20,6 +21,7 @@ Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
 2. **Prinsip-prinsip TDD**
    - Siklus Red-Green-Refactor
    - Menulis Tes yang Efektif
+
 ---
 
 3. **Manfaat TDD**
@@ -32,6 +34,7 @@ Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
    - Menulis Tes Pertama
    - Mengimplementasikan Kode
    - Refactoring
+
 ---
 
 5. **Konsep TDD Lanjutan**
@@ -43,6 +46,7 @@ Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
    - Contoh Dunia Nyata
    - Kesalahan Umum dan Cara Menghindarinya
    - Tips untuk TDD yang Efektif
+
 ---
 
 # 1. Pengantar TDD
@@ -52,6 +56,7 @@ Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
 	- TDD adalah pendekatan software development di mana tes ditulis sebelum menulis program/kode.
 	- Jadi, kita pastikan program/kode kita sesuai dengan yang diharapkan dari tes.
 	- TDD menulis testing di awal.
+
 ---
 
 - **Tujuan dari TDD**
@@ -61,6 +66,7 @@ Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
 	- Tidak prone to error.
 	- Mengarahkan ke kode atau struktur kode yang lebih baik.
 	- Menambah produktivitas (di awal akan lebih memakan waktu).
+
 ---
 
 ## TDD vs. Tes Tradisional
@@ -68,6 +74,7 @@ Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
 - **TDD**
 	- Tes dulu, baru kode. Ini bikin kode kita selalu teruji dan sesuai dengan kebutuhan.
 	- Bukan hanya fokus pada tes, tapi juga pada aspek lain pada development proses.
+
 ---
 
 # 2. Prinsip-prinsip TDD
@@ -77,6 +84,7 @@ Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
 2. **Green**: Tulis kode seminimal mungkin buat lulus tes.
 3. **Refactor**: Perbaiki kode tanpa ubah perilaku.
   - **Referensi**: Martin, R.C. (2008). *Clean Code: A Handbook of Agile Software Craftsmanship*. Prentice Hall.
+
 ---
 
 ### Menulis Tes yang Efektif
@@ -84,6 +92,7 @@ Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
 - **Terisolasi**: Setiap tes fokus pada satu perilaku atau fungsionalitas.
 - **Dapat Diulang**: Tes harus selalu menghasilkan hasil yang sama.
   - **Referensi**: Freeman, S., & Pryce, N. (2009). *Growing Object-Oriented Software, Guided by Tests*. Addison-Wesley.
+
 ---
 
 # 3. Manfaat TDD
@@ -92,6 +101,7 @@ Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
 - Kode jadi lebih teruji.
 - Mengurangi bug dan kesalahan.
   - **Referensi**: Erdogmus, H., Morisio, M., & Torchiano, M. (2005). "On the effectiveness of the test-first approach to programming". IEEE Transactions on Software Engineering, 31(3), 226-237.
+
 ---
 
 ### Dokumentasi
@@ -99,10 +109,12 @@ Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
 - Memudahkan pengembang baru buat paham kode.
 
 ---
+
 ### Peningkatan Desain
 - Mendorong praktik desain yang lebih baik.
 - Membantu identifikasi dan perbaikan masalah desain lebih awal.
   - **Referensi**: Beck, K. (2002). *Test-Driven Development by Example*. Addison-Wesley.
+
 ---
 
 # 4. Alur Kerja TDD dalam Go (Golang)
@@ -114,12 +126,15 @@ cd tdd-example
 go mod init tdd-example
 
 ```
+
 ---
+
 # 5. Konsep TDD Lanjutan
 ### Mocking dan Stubbing
 - Mocks: Buat simulasi perilaku objek nyata.
 - Stubs: Memberikan respons yang sudah ditentukan buat panggilan fungsi.
   - **Referensi**: Freeman, S., & Pryce, N. (2009). Growing Object-Oriented Software, Guided by Tests. Addison-Wesley.
+
 ---
 
 ### Menguji Kode Asinkron
@@ -136,11 +151,13 @@ func TestAsyncFunction(t *testing.T) {
 }
 ```
 ---
+
 ## Pengujian Integrasi
 - Uji interaksi antara berbagai bagian sistem.
 - Pastikan sistem bekerja secara keseluruhan.
 
 ---
+
 # 6. Studi Kasus dan Praktik Terbaik
 ## Contoh Dunia Nyata
 
@@ -150,6 +167,7 @@ func TestAsyncFunction(t *testing.T) {
 - Nulis tes yang terlalu kompleks.
 - Mengabaikan refactoring setelah tes lulus.
    - **Referensi**: Martin, R.C. (2008). Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall.
+
 ---
 
 ## Tips untuk TDD yang Efektif
@@ -157,4 +175,7 @@ func TestAsyncFunction(t *testing.T) {
 - Tingkatkan kompleksitas secara bertahap.
 - Terus refactor kode.
 ---
+
 # Terima kasih
+
+---
