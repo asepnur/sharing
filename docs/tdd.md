@@ -9,10 +9,9 @@ footer: "Asepnur"
 # Tema 
 
 Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
-
 --- 
 
-# Brief
+# Brief of TDD
 1. **Pengantar TDD**
    - Apa itu TDD?
    - Sejarah dan Evolusi
@@ -23,7 +22,6 @@ Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
    - Menulis Tes yang Efektif
 ---
 
-# Brief (Continue)
 3. **Manfaat TDD**
    - Kualitas Kode
    - Dokumentasi
@@ -34,10 +32,8 @@ Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
    - Menulis Tes Pertama
    - Mengimplementasikan Kode
    - Refactoring
-
 ---
 
-# Brief (Continue)
 5. **Konsep TDD Lanjutan**
    - Mocking dan Stubbing
    - Menguji Kode Asinkron
@@ -47,7 +43,6 @@ Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
    - Contoh Dunia Nyata
    - Kesalahan Umum dan Cara Menghindarinya
    - Tips untuk TDD yang Efektif
-
 ---
 
 # 1. Pengantar TDD
@@ -59,23 +54,20 @@ Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
 	- TDD menulis testing di awal.
 ---
 
-# 1. Pengantar TDD (Cont)
 - **Tujuan dari TDD**
 	- Memastikan semua kode yang ditulis lulus tes dan sesuai ekspektasi.
 	- Bugs atau kesalahan logika bisa ditemukan lebih awal.
 	- Membantu membentuk budaya refactor dan melakukannya menjadi lebih percaya diri.
 	- Tidak prone to error.
-	- Mengarhkan ke kode atau struktur kode yang lebih baik.
+	- Mengarahkan ke kode atau struktur kode yang lebih baik.
 	- Menambah produktivitas (di awal akan lebih memakan waktu).
 ---
 
-# 1. Pengantar TDD (Cont)
 ## TDD vs. Tes Tradisional
 - **Pengujian Tradisional**: Kode dulu, tes kemudian.
 - **TDD**
 	- Tes dulu, baru kode. Ini bikin kode kita selalu teruji dan sesuai dengan kebutuhan.
 	- Bukan hanya fokus pada tes, tapi juga pada aspek lain pada development proses.
-
 ---
 
 # 2. Prinsip-prinsip TDD
@@ -87,13 +79,11 @@ Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
   - **Referensi**: Martin, R.C. (2008). *Clean Code: A Handbook of Agile Software Craftsmanship*. Prentice Hall.
 ---
 
-# 2. Prinsip-prinsip TDD (Cont)
 ### Menulis Tes yang Efektif
 - **Sederhana dan Jelas**: Tes harus mudah dibaca dan dipahami.
 - **Terisolasi**: Setiap tes fokus pada satu perilaku atau fungsionalitas.
 - **Dapat Diulang**: Tes harus selalu menghasilkan hasil yang sama.
   - **Referensi**: Freeman, S., & Pryce, N. (2009). *Growing Object-Oriented Software, Guided by Tests*. Addison-Wesley.
-
 ---
 
 # 3. Manfaat TDD
@@ -103,7 +93,7 @@ Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
 - Mengurangi bug dan kesalahan.
   - **Referensi**: Erdogmus, H., Morisio, M., & Torchiano, M. (2005). "On the effectiveness of the test-first approach to programming". IEEE Transactions on Software Engineering, 31(3), 226-237.
 ---
-# 3. Manfaat TDD (Cont)
+
 ### Dokumentasi
 - Tes jadi dokumentasi buat kode.
 - Memudahkan pengembang baru buat paham kode.
@@ -131,7 +121,8 @@ go mod init tdd-example
 - Stubs: Memberikan respons yang sudah ditentukan buat panggilan fungsi.
   - **Referensi**: Freeman, S., & Pryce, N. (2009). Growing Object-Oriented Software, Guided by Tests. Addison-Wesley.
 ---
-Menguji Kode Asinkron
+
+### Menguji Kode Asinkron
 Gunakan channel dan goroutine di Go buat uji kode asinkron.
 Contoh:
 ```go
@@ -152,6 +143,7 @@ Pastikan sistem bekerja secara keseluruhan.
 ---
 # 6. Studi Kasus dan Praktik Terbaik
 ## Contoh Dunia Nyata
+
 Bagikan contoh dari proyek sukses yang pake TDD.
 Diskusikan gimana TDD meningkatkan hasil proyek.
 Kesalahan Umum dan Cara Menghindarinya
@@ -159,8 +151,10 @@ Nulis tes yang terlalu kompleks.
 Mengabaikan refactoring setelah tes lulus.
 Referensi: Martin, R.C. (2008). Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall.
 ---
+
 ## Tips untuk TDD yang Efektif
 Mulai dengan tes kecil dan sederhana.
 Tingkatkan kompleksitas secara bertahap.
 Terus refactor kode.
-
+---
+# Terima kasih
