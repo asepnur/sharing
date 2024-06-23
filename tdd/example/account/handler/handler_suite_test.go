@@ -34,17 +34,18 @@ var _ = Describe("AuthService", func() {
 			Expect(err).To(BeNil())
 		})
 
-		// It("should return an error if the user already exists", func() {
-		// 	err := accountHandler.Register(context.Background(), &model.Account{
-		// 		Username: "same_username",
-		// 		Password: "password",
-		// 	})
-		// 	err = accountHandler.Register(context.Background(), &model.Account{
-		// 		Username: "same_username",
-		// 		Password: "password",
-		// 	})
-		// 	Expect(err).ToNot(BeNil())
-		// })
+		It("should return an error if the user already exists", func() {
+			err := accountHandler.Register(context.Background(), &model.Account{
+				Username: "same_username",
+				Password: "password",
+			})
+			Expect(err).To(BeNil())
+			err = accountHandler.Register(context.Background(), &model.Account{
+				Username: "same_username",
+				Password: "password",
+			})
+			Expect(err).ToNot(BeNil())
+		})
 	})
 
 	Describe("Authenticate", func() {
@@ -54,6 +55,7 @@ var _ = Describe("AuthService", func() {
 				Password: "password",
 			}
 			err := accountHandler.Register(context.Background(), account)
+			Expect(err).To(BeNil())
 			err = accountHandler.Authenticate(context.Background(), account)
 			Expect(err).To(BeNil())
 		})
