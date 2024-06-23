@@ -1,36 +1,31 @@
 # Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
 
-## Agenda (1 Jam 15 Menit)
-0. **Goal of This Sharing**
-	 - Understand the concept of TDD and BDD
-	 - Could have a big picture example of those things
-
-1. **Pengantar TDD** (10 menit)
+1. **Pengantar TDD**
    - Apa itu TDD?
    - Sejarah dan Evolusi
    - TDD vs. Pengujian Tradisional
 
-2. **Prinsip-prinsip TDD** (10 menit)
+2. **Prinsip-prinsip TDD**
    - Siklus Red-Green-Refactor
    - Menulis Tes yang Efektif
 
-3. **Manfaat TDD** (10 menit)
+3. **Manfaat TDD**
    - Kualitas Kode
    - Dokumentasi
    - Peningkatan Desain
 
-4. **Alur Kerja TDD dalam Go (Golang)** (20 menit)
+4. **Alur Kerja TDD dalam Go (Golang)**
    - Menyiapkan Proyek Go untuk TDD
    - Menulis Tes Pertama
    - Mengimplementasikan Kode
    - Refactoring
 
-5. **Konsep TDD Lanjutan** (15 menit)
+5. **Konsep TDD Lanjutan**
    - Mocking dan Stubbing
    - Menguji Kode Asinkron
    - Pengujian Integrasi
 
-6. **Studi Kasus dan Praktik Terbaik** (10 menit)
+6. **Studi Kasus dan Praktik Terbaik**
    - Contoh Dunia Nyata
    - Kesalahan Umum dan Cara Menghindarinya
    - Tips untuk TDD yang Efektif
@@ -103,11 +98,12 @@ cd tdd-example
 go mod init tdd-example
 
 ```
-Konsep TDD Lanjutan
-Mocking dan Stubbing
-Mocks: Buat simulasi perilaku objek nyata.
-Stubs: Memberikan respons yang sudah ditentukan buat panggilan fungsi.
-Referensi: Freeman, S., & Pryce, N. (2009). Growing Object-Oriented Software, Guided by Tests. Addison-Wesley.
+---
+## 5. Konsep TDD Lanjutan
+### Mocking dan Stubbing
+- Mocks: Buat simulasi perilaku objek nyata.
+- Stubs: Memberikan respons yang sudah ditentukan buat panggilan fungsi.
+  - **Referensi**: Freeman, S., & Pryce, N. (2009). Growing Object-Oriented Software, Guided by Tests. Addison-Wesley.
 Menguji Kode Asinkron
 Gunakan channel dan goroutine di Go buat uji kode asinkron.
 Contoh:
