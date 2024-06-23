@@ -1,3 +1,11 @@
+---
+marp: true
+paginate: true
+theme: default
+header: "My Presentation"
+footer: "Footer Text"
+---
+
 # Tech Sharing: Pengembangan Berbasis Tes (TDD) Lanjutan
 
 1. **Pengantar TDD**
