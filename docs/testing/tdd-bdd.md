@@ -162,6 +162,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 - Mulai dengan tes kecil dan sederhana.
 - Tingkatkan kompleksitas secara bertahap.
 - Terus refactor kode.
+
 <!-- marp_section --> 
 # 7. BDD: Pengembangan Berbasis Perilaku
 ## Apa Itu BDD?
@@ -214,5 +215,3 @@ Scenario: Registrasi berhasil dengan Email/Kata Sandi
 
 <!-- marp_section --> 
 # Terima kasih
-
-<!-- marp_section --> 
