@@ -9,10 +9,18 @@ header: "TDD & BDD"
 
 # Tema 
 Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
+- Asep Nur Muhammad
+- Engineering Manager Ruangguru
 
 --- 
+## Peraturan
+- Hadir: Tubuh, fikiran dan fisik
+- Tidak harus berusaha mengahafal sintak
+- Fokus kepada konsep
 
-# Lingkup Materi
+---
+
+## Lingkup Materi
 1. **Pengantar TDD**
    - Apa itu TDD?
    - Tujuan dari TDD
@@ -54,9 +62,9 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
    - Contoh Real usecase
 
 ---
-# 1. Pengantar TDD
+## 1. Pengantar TDD
 
-## Apa itu TDD?
+### Apa itu TDD?
 - **Definisi**: 
 	- TDD adalah pendekatan software development di mana tes ditulis sebelum menulis program/kode.
 	- Jadi, kita pastikan program/kode kita sesuai dengan yang diharapkan dari tes.
@@ -74,7 +82,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 
 ---
 
-## TDD vs. Tes Tradisional
+### TDD vs. Tes Tradisional
 - **Pengujian Tradisional**: Kode dulu, tes kemudian.
 - **TDD**
 	- Tes dulu, baru kode. Ini bikin kode kita selalu teruji dan sesuai dengan kebutuhan.
@@ -82,7 +90,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 
 ---
 
-# 2. Prinsip-prinsip TDD
+## 2. Prinsip-prinsip TDD
 
 ### Siklus Red-Green-Refactor
 1. **Red**: Tulis tes yang gagal, Menulis tes pertama.
@@ -101,7 +109,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 
 ---
 
-# 3. Manfaat TDD
+## 3. Manfaat TDD
 
 ### Kualitas Kode
 - Kode jadi lebih teruji.
@@ -124,7 +132,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 
 ---
 
-# 4. Contoh Kecil TDD (Golang)
+## 4. Contoh Kecil TDD (Golang)
 
 ### Contoh TDD 
 - Spek: Buatkan fungsi untuk memvalidasi Authentikasi
@@ -134,7 +142,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 - [Code Base](https://github.com/asepnur/sharing/tree/main/example/testing/tdd).
 ---
 
-# 5. Konsep TDD Lanjutan
+## 5. Konsep TDD Lanjutan
 ### Mocking dan Stubbing
 - Mocks: Buat simulasi perilaku objek nyata.
 - Stubs: Memberikan respons yang sudah ditentukan buat panggilan fungsi.
@@ -142,28 +150,28 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 
 ---
 
-## Pengujian Integrasi
+### Pengujian Integrasi
 - Uji interaksi antara berbagai bagian sistem.
 - Pastikan sistem bekerja secara keseluruhan.
 - Lebih baik dikombinasikan dengan BDD.
 
 ---
 
-# 6. Kesalahan dan Tips untuk Menguasai TDD 
-## Kesalahan Umum dan Cara Menghindarinya
+## 6. Kesalahan dan Tips untuk Menguasai TDD 
+### Kesalahan Umum dan Cara Menghindarinya
 - Nulis tes yang terlalu kompleks.
 - Mengabaikan refactoring setelah tes lulus.
    - **Referensi**: Martin, R.C. (2008). Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall.
 
 ---
 
-## Tips untuk TDD yang Efektif
+### Tips untuk TDD yang Efektif
 - Mulai dengan tes kecil dan sederhana.
 - Tingkatkan kompleksitas secara bertahap.
 - Terus refactor kode.
 ---
-# 7. BDD: Pengembangan Berbasis Perilaku
-## Apa Itu BDD?
+## 7. BDD: Pengembangan Berbasis Perilaku
+### Apa Itu BDD?
 Behavior-Driven Development (BDD) adalah proses pengembangan perangkat lunak yang berfokus pada sudut pandang pengguna dengan menggunakan bahasa yang mudah dipahami orang awam untuk mendorong kolaborasi antara pengembang, QA, dan pemangku kepentingan non-teknis.
 - Meningkatkan komunikasi dan pemahaman.
 - Berfokus pada perilaku yang diharapkan dari perangkat lunak.
@@ -171,7 +179,7 @@ Behavior-Driven Development (BDD) adalah proses pengembangan perangkat lunak yan
 
 ---
 
-## Konsep Utama BDD
+### Konsep Utama BDD
 - **Kolaborasi**: Melibatkan semua pemangku kepentingan
 - **Bahasa Umum**: Menggunakan Gherkin untuk menulis tes
 - **Spesifikasi yang Dapat Dieksekusi**: Tes otomatis dan dapat dijalankan
@@ -179,14 +187,14 @@ Behavior-Driven Development (BDD) adalah proses pengembangan perangkat lunak yan
 
 ---
 
-## Bahasa Gherkin
+### Bahasa Gherkin
 Gherkin adalah bahasa spesifik domain yang dapat dibaca oleh bisnis.
 - Digunakan untuk menulis cerita pengguna dan skenario
 - Mengikuti format sederhana
 
 ---
 
-## Sintaks Gherkin
+### Sintaks Gherkin
 - **Fitur**: Menjelaskan fitur yang diuji
 - **Skenario**: Menjelaskan kasus uji spesifik
 - **Given**: Menetapkan konteks awal
@@ -205,10 +213,19 @@ Scenario: Registrasi berhasil dengan Email/Kata Sandi
   Then registrasi harus berhasil
 ```
 ---
-# 8. **TDD x BDD**
-## Perbedaan
-## Apakah bisa dikombinasikan?
-## Contoh Real usecase
+## 8. **TDD x BDD**
+### Perbedaan
+- Fokus
+   - TDD: Fokus pada implementasi teknis dan penulisan tes unit.
+   - BDD: Fokus pada perilaku aplikasi dan kebutuhan bisnis.
+- Bahasa
+   - TDD: Tes ditulis dalam bahasa pemrograman yang digunakan.
+   - BDD: Skenario ditulis dalam bahasa awam.
+### Apakah bisa dikombinasikan?
+- BDD mengkombinasikan TDD dan DDD
+- Memudahkan menulis TDD
+
+### Contoh Real usecase
 - [Code Base](https://github.com/asepnur/sharing/tree/main/example/testing/combine).
 
 ---
