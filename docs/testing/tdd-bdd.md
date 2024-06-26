@@ -5,13 +5,12 @@ paginate: true
 backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.svg')
 header: "TDD & BDD"
-slide-separator: "<!-- marp_section -->"
 ---
 
 # Tema 
 Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 
-<!-- marp_section --> 
+--- 
 
 # Lingkup Materi
 1. **Pengantar TDD**
@@ -23,7 +22,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
    - Siklus Red-Green-Refactor
    - Menulis Tes yang Efektif
 
-<!-- marp_section --> 
+---
 
 3. **Manfaat TDD**
    - Kualitas Kode
@@ -33,7 +32,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 4. **Contoh Kecil TDD (Golang)**
    - Contoh TDD 
 
-<!-- marp_section --> 
+---
 
 5. **Konsep TDD Lanjutan**
    - Mocking dan Stubbing
@@ -43,18 +42,18 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
    - Kesalahan Umum dan Cara Menghindarinya
    - Tips untuk TDD yang Efektif
 
-<!-- marp_section --> 
+---
 7. **BDD**
    - Definisi BDD
    - Gherkin Language
    - Contoh BDD
-<!-- marp_section --> 
+---
 8. **TDD x BDD**
    - Perbedaan
    - Apakah bisa dikombinasikan?
    - Contoh Real usecase
 
-<!-- marp_section --> 
+---
 # 1. Pengantar TDD
 
 ## Apa itu TDD?
@@ -63,7 +62,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 	- Jadi, kita pastikan program/kode kita sesuai dengan yang diharapkan dari tes.
 	- TDD menjadikan testing sebagain prinsip untuk membuat sebuah program atau kode.
 
-<!-- marp_section --> 
+---
 
 - **Tujuan dari TDD**
 	- Memastikan semua kode yang ditulis lulus tes dan sesuai ekspektasi.
@@ -73,7 +72,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 	- Mengarahkan ke kode atau struktur kode yang lebih baik.
 	- Menambah produktivitas (di awal akan lebih memakan waktu).
 
-<!-- marp_section --> 
+---
 
 ## TDD vs. Tes Tradisional
 - **Pengujian Tradisional**: Kode dulu, tes kemudian.
@@ -81,7 +80,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 	- Tes dulu, baru kode. Ini bikin kode kita selalu teruji dan sesuai dengan kebutuhan.
 	- Bukan hanya fokus pada tes, tapi juga pada aspek lain pada development proses (design pattern, koloborasi antar tim, dll)
 
-<!-- marp_section --> 
+---
 
 # 2. Prinsip-prinsip TDD
 
@@ -91,7 +90,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 3. **Refactor**: Perbaiki kode tanpa ubah perilaku.
   - **Referensi**: Martin, R.C. (2008). *Clean Code: A Handbook of Agile Software Craftsmanship*. Prentice Hall.
 
-<!-- marp_section --> 
+---
 
 ### Menulis Tes yang Efektif
 - **Sederhana dan Jelas**: Tes harus mudah dibaca dan dipahami.
@@ -100,7 +99,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 - **Hindari Pengulangan**: Pengulangan tes yang tidak perlu akan menambah kerumitan tes.
   - **Referensi**: Freeman, S., & Pryce, N. (2009). *Growing Object-Oriented Software, Guided by Tests*. Addison-Wesley.
 
-<!-- marp_section --> 
+---
 
 # 3. Manfaat TDD
 
@@ -110,20 +109,20 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 - Lebih percaya diri untuk melakukan perubahan kode.
   - **Referensi**: Erdogmus, H., Morisio, M., & Torchiano, M. (2005). "On the effectiveness of the test-first approach to programming". IEEE Transactions on Software Engineering, 31(3), 226-237.
 
-<!-- marp_section --> 
+---
 
 ### Dokumentasi
 - Tes jadi dokumentasi buat kode.
 - Memudahkan pengembang baru buat paham kode.
 
-<!-- marp_section --> 
+---
 
 ### Peningkatan Desain
 - Mendorong praktik desain yang lebih baik.
 - Membantu identifikasi dan perbaikan masalah desain lebih awal.
   - **Referensi**: Beck, K. (2002). *Test-Driven Development by Example*. Addison-Wesley.
 
-<!-- marp_section --> 
+---
 
 # 4. Contoh Kecil TDD (Golang)
 
@@ -132,8 +131,8 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 - Kriteria:
    - Fungsi menerima username dan password
    - Hanya akan berjalan jika keduanya ada
-- [Example Here!](https://github.com/asepnur/sharing/tree/main/example/testing/tdd).
-<!-- marp_section --> 
+- [Code Base](https://github.com/asepnur/sharing/tree/main/example/testing/tdd).
+---
 
 # 5. Konsep TDD Lanjutan
 ### Mocking dan Stubbing
@@ -141,14 +140,14 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 - Stubs: Memberikan respons yang sudah ditentukan buat panggilan fungsi.
   - **Referensi**: Freeman, S., & Pryce, N. (2009). Growing Object-Oriented Software, Guided by Tests. Addison-Wesley.
 
-<!-- marp_section --> 
+---
 
 ## Pengujian Integrasi
 - Uji interaksi antara berbagai bagian sistem.
 - Pastikan sistem bekerja secara keseluruhan.
 - Lebih baik dikombinasikan dengan BDD.
 
-<!-- marp_section --> 
+---
 
 # 6. Kesalahan dan Tips untuk Menguasai TDD 
 ## Kesalahan Umum dan Cara Menghindarinya
@@ -156,14 +155,13 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 - Mengabaikan refactoring setelah tes lulus.
    - **Referensi**: Martin, R.C. (2008). Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall.
 
-<!-- marp_section --> 
+---
 
 ## Tips untuk TDD yang Efektif
 - Mulai dengan tes kecil dan sederhana.
 - Tingkatkan kompleksitas secara bertahap.
 - Terus refactor kode.
-
-<!-- marp_section --> 
+---
 # 7. BDD: Pengembangan Berbasis Perilaku
 ## Apa Itu BDD?
 Behavior-Driven Development (BDD) adalah proses pengembangan perangkat lunak yang berfokus pada sudut pandang pengguna dengan menggunakan bahasa yang mudah dipahami orang awam untuk mendorong kolaborasi antara pengembang, QA, dan pemangku kepentingan non-teknis.
@@ -171,7 +169,7 @@ Behavior-Driven Development (BDD) adalah proses pengembangan perangkat lunak yan
 - Berfokus pada perilaku yang diharapkan dari perangkat lunak.
 - Diperkenalkan oleh Dan North.
 
-<!-- marp_section --> 
+---
 
 ## Konsep Utama BDD
 - **Kolaborasi**: Melibatkan semua pemangku kepentingan
@@ -179,14 +177,14 @@ Behavior-Driven Development (BDD) adalah proses pengembangan perangkat lunak yan
 - **Spesifikasi yang Dapat Dieksekusi**: Tes otomatis dan dapat dijalankan
 - **Dokumentasi**: Tes berfungsi sebagai dokumentasi yang hidup
 
-<!-- marp_section --> 
+---
 
 ## Bahasa Gherkin
 Gherkin adalah bahasa spesifik domain yang dapat dibaca oleh bisnis.
 - Digunakan untuk menulis cerita pengguna dan skenario
 - Mengikuti format sederhana
 
-<!-- marp_section --> 
+---
 
 ## Sintaks Gherkin
 - **Fitur**: Menjelaskan fitur yang diuji
@@ -195,7 +193,7 @@ Gherkin adalah bahasa spesifik domain yang dapat dibaca oleh bisnis.
 - **When**: Menjelaskan tindakan atau peristiwa
 - **Then**: Menjelaskan hasil yang diharapkan
 
-<!-- marp_section --> 
+---
 
 ### Contoh:
 ```gherkin
@@ -206,12 +204,12 @@ Scenario: Registrasi berhasil dengan Email/Kata Sandi
   When pengguna mendaftar dengan email dan kata sandi
   Then registrasi harus berhasil
 ```
-<!-- marp_section --> 
+---
 # 8. **TDD x BDD**
 ## Perbedaan
 ## Apakah bisa dikombinasikan?
 ## Contoh Real usecase
-- [Example Here!](https://github.com/asepnur/sharing/tree/main/example/testing/combine).
+- [Code Base](https://github.com/asepnur/sharing/tree/main/example/testing/combine).
 
-<!-- marp_section --> 
+---
 # Terima kasih
