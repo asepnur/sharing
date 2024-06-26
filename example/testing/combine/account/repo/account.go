@@ -27,13 +27,12 @@ func (a *accountRepoImpl) FindByUsername(username string) (*model.Account, error
 		return nil, err
 	}
 	defer rows.Close()
+	var account model.Account
 	for rows.Next() {
-		var account model.Account
-		err = a.conn.ScanRows(rows, &account)
+		err = rows.Scan(&account.Serial, &account.Username, &account.Password, &account.Type)
 		if err != nil {
 			return nil, err
 		}
-		return &account, nil
 	}
-	return nil, nil
+	return &account, nil
 }

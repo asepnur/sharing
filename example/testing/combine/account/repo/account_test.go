@@ -29,7 +29,6 @@ func Test_accountRepoImpl_FindByUsername(t *testing.T) {
 		WillReturnRows(rows)
 
 	account, err := repo.FindByUsername("testuser")
-
 	assert.NoError(t, err)
 	assert.NotNil(t, account)
 	assert.Equal(t, "1234", account.Serial)
