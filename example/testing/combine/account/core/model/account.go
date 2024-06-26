@@ -6,3 +6,7 @@ type Account struct {
 	Password string
 	Type     string
 }
+
+func (Account) TableName() string {
+	return "account"
+}

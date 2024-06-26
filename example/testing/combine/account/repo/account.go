@@ -17,22 +17,26 @@ func NewAccountRepo(conn *gorm.DB) repo.AccountRepo {
 }
 
 func (a *accountRepoImpl) Insert(account *model.Account) error {
-	panic("not implemented") // TODO: Implement
+	return a.conn.Create(account).Error
 }
 
 func (a *accountRepoImpl) FindByUsername(username string) (*model.Account, error) {
 	query := "SELECT * FROM account WHERE username = ?"
 	rows, err := a.conn.Raw(query, username).Rows()
+	if err == gorm.ErrRecordNotFound {
+		return nil, model.ErrAccountNotFound
+	}
 	if err != nil {
 		return nil, err
 	}
 	defer rows.Close()
-	var account model.Account
+	var account *model.Account
 	for rows.Next() {
+		account = &model.Account{}
 		err = rows.Scan(&account.Serial, &account.Username, &account.Password, &account.Type)
 		if err != nil {
 			return nil, err
 		}
 	}
-	return &account, nil
+	return account, nil
 }

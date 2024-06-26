@@ -4,6 +4,7 @@ import (
 	"context"
 
 	"github.com/asepnur/sharing/example/testing/combine/account/core/model"
+	"github.com/asepnur/sharing/example/testing/combine/account/core/module"
 )
 
 type AccountHandler interface {
@@ -12,16 +13,25 @@ type AccountHandler interface {
 }
 
 type accountHandlerDependency struct {
+	account module.AccountModule
 }
 
-func NewAccountHandler() AccountHandler {
-	return &accountHandlerDependency{}
+func NewAccountHandler(account module.AccountModule) AccountHandler {
+	return &accountHandlerDependency{
+		account: account,
+	}
 }
 
 func (a *accountHandlerDependency) Register(ctx context.Context, account *model.Account) error {
-	panic("not implemented") // TODO: Implement
+	if err := a.account.Register(account); err != nil {
+		return err
+	}
+	return nil
 }
 
 func (a *accountHandlerDependency) Authenticate(ctx context.Context, account *model.Account) error {
-	panic("not implemented")
+	if err := a.account.Authenticate(account); err != nil {
+		return err
+	}
+	return nil
 }
