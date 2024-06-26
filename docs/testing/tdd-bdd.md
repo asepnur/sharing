@@ -1,4 +1,4 @@
-<!-- marp_section --> 
+---
 theme: default 
 _class: lead
 paginate: true
@@ -6,8 +6,7 @@ backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.svg')
 header: "TDD & BDD"
 slide-separator: "<!-- marp_section -->"
-
-<!-- marp_section -->
+---
 
 # Tema 
 Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
