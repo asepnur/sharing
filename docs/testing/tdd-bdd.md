@@ -21,48 +21,47 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 ---
 
 ## Lingkup Materi
-1. **Pengantar TDD**
+**Pengantar TDD**
    - Apa itu TDD?
    - Tujuan dari TDD
    - TDD vs. Pengujian Tradisional
 
-2. **Prinsip-prinsip TDD**
+**Prinsip-prinsip TDD**
    - Siklus Red-Green-Refactor
    - Menulis Tes yang Efektif
 
 ---
 
-3. **Manfaat TDD**
+**Manfaat TDD**
    - Kualitas Kode
    - Dokumentasi
    - Peningkatan Desain
 
-4. **Contoh Kecil TDD (Golang)**
+**Contoh Kecil TDD (Golang)**
    - Contoh TDD 
 
 ---
 
-5. **Konsep TDD Lanjutan**
+**Konsep TDD Lanjutan**
    - Mocking dan Stubbing
    - Pengujian Integrasi
 
-6. **Kesalahan dan Tips untuk Menguasai TDD**
+**Kesalahan dan Tips untuk Menguasai TDD**
    - Kesalahan Umum dan Cara Menghindarinya
    - Tips untuk TDD yang Efektif
 
 ---
-7. **BDD**
+**BDD**
    - Definisi BDD
    - Gherkin Language
    - Contoh BDD
----
-8. **TDD x BDD**
+**TDD x BDD**
    - Perbedaan
    - Apakah bisa dikombinasikan?
    - Contoh Real usecase
 
 ---
-## 1. Pengantar TDD
+## Pengantar TDD
 
 ### Apa itu TDD?
 - **Definisi**: 
@@ -90,7 +89,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 
 ---
 
-## 2. Prinsip-prinsip TDD
+## Prinsip-prinsip TDD
 
 ### Siklus Red-Green-Refactor
 1. **Red**: Tulis tes yang gagal, Menulis tes pertama.
@@ -109,7 +108,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 
 ---
 
-## 3. Manfaat TDD
+## Manfaat TDD
 
 ### Kualitas Kode
 - Kode jadi lebih teruji.
@@ -132,7 +131,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 
 ---
 
-## 4. Contoh Kecil TDD (Golang)
+## Contoh Kecil TDD (Golang)
 
 ### Contoh TDD 
 - Spek: Buatkan fungsi untuk memvalidasi Authentikasi
@@ -142,7 +141,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 - [Code Base](https://github.com/asepnur/sharing/tree/main/example/testing/tdd).
 ---
 
-## 5. Konsep TDD Lanjutan
+## Konsep TDD Lanjutan
 ### Mocking dan Stubbing
 - Mocks: Buat simulasi perilaku objek nyata.
 - Stubs: Memberikan respons yang sudah ditentukan buat panggilan fungsi.
@@ -157,7 +156,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 
 ---
 
-## 6. Kesalahan dan Tips untuk Menguasai TDD 
+## Kesalahan dan Tips untuk Menguasai TDD 
 ### Kesalahan Umum dan Cara Menghindarinya
 - Nulis tes yang terlalu kompleks.
 - Mengabaikan refactoring setelah tes lulus.
@@ -170,7 +169,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
 - Tingkatkan kompleksitas secara bertahap.
 - Terus refactor kode.
 ---
-## 7. BDD: Pengembangan Berbasis Perilaku
+## BDD: Pengembangan Berbasis Perilaku
 ### Apa Itu BDD?
 Behavior-Driven Development (BDD) adalah proses pengembangan perangkat lunak yang berfokus pada sudut pandang pengguna dengan menggunakan bahasa yang mudah dipahami orang awam untuk mendorong kolaborasi antara pengembang, QA, dan pemangku kepentingan non-teknis.
 - Meningkatkan komunikasi dan pemahaman.
@@ -213,7 +212,7 @@ Scenario: Registrasi berhasil dengan Email/Kata Sandi
   Then registrasi harus berhasil
 ```
 ---
-## 8. **TDD x BDD**
+## **TDD x BDD**
 ### Perbedaan
 - Fokus
    - TDD: Fokus pada implementasi teknis dan penulisan tes unit.
