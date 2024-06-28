@@ -55,6 +55,7 @@ Fundamental TDD dan BDD: Pengembangan Berbasis Tes dan Perilaku
    - Definisi BDD
    - Gherkin Language
    - Contoh BDD
+
 **TDD x BDD**
    - Perbedaan
    - Apakah bisa dikombinasikan?
@@ -220,6 +221,8 @@ Scenario: Registrasi berhasil dengan Email/Kata Sandi
 - Bahasa
    - TDD: Tes ditulis dalam bahasa pemrograman yang digunakan.
    - BDD: Skenario ditulis dalam bahasa awam.
+
+---
 ### Apakah bisa dikombinasikan?
 - BDD mengkombinasikan TDD dan DDD
 - Memudahkan menulis TDD
