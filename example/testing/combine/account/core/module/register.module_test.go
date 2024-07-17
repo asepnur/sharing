@@ -45,13 +45,33 @@ func Test_accountModuleDependency_Register(t *testing.T) {
 				repo: tt.fields.repo,
 			}
 			if tt.name == "username already exists" {
-				mockRepo.EXPECT().FindByUsername(tt.args.account.Username).Return(&model.Account{Username: "existing_user", Password: "password"}, nil)
+				mockRepo.EXPECT().FindByUsername(tt.args.account.Username).Return(&model.Account{Username: "new_user", Password: "password"}, nil)
 			} else {
 				mockRepo.EXPECT().FindByUsername(tt.args.account.Username).Return(nil, nil)
 				mockRepo.EXPECT().Insert(gomock.Any()).Return(nil)
 			}
 			if err := a.Register(tt.args.account); (err != nil) != tt.wantErr {
 				t.Errorf("accountModuleDependency.Register() error = %v, wantErr %v", err, tt.wantErr)
+			}
+		})
+	}
+}
+
+func Test_validate(t *testing.T) {
+	type args struct {
+		a *model.Account
+	}
+	tests := []struct {
+		name    string
+		args    args
+		wantErr bool
+	}{
+		// TODO: Add test cases.
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if err := validate(tt.args.a); (err != nil) != tt.wantErr {
+				t.Errorf("validate() error = %v, wantErr %v", err, tt.wantErr)
 			}
 		})
 	}

@@ -1,6 +1,8 @@
 package tdd
 
-import "errors"
+import (
+	"errors"
+)
 
 var ErrUsernameEmpty = errors.New("username is empty")
 var ErrPasswordEmpty = errors.New("password is empty")

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat Client</title>
+</head>
+<body>
+  <h1>Chat Room</h1>
+  <div id="messages"></div>
+  <input id="username" type="text" placeholder="Username" />
+  <input id="room" type="text" placeholder="Room" />
+  <input id="message" type="text" placeholder="Message" />
+  <button onclick="sendMessage()">Send</button>
+
+  <script>
+    const socket = new WebSocket('ws://wschat.staging.svc.cluster.local/ws');
+
+    socket.onopen = function(event) {
+      console.log('WebSocket connection established.');
+    };
+
+    socket.onmessage = function(event) {
+      const msg = JSON.parse(event.data);
+      const messages = document.getElementById('messages');
+      const messageElem = document.createElement('div');
+      messageElem.innerText = `[${new Date(msg.time).toLocaleTimeString()}] ${msg.username}: ${msg.content}`;
+      messages.appendChild(messageElem);
+    };
+
+    socket.onclose = function(event) {
+      console.log('WebSocket connection closed.');
+    };
+
+    socket.onerror = function(error) {
+      console.error('WebSocket error:', error);
+    };
+
+    function sendMessage() {
+      const username = document.getElementById('username').value;
+      const room = document.getElementById('room').value;
+      const content = document.getElementById('message').value;
+
+      if (!username || !room || !content) {
+        alert('Please enter all fields.');
+        return;
+      }
+
+      const message = {
+        room: room,
+        username: username,
+        content: content,
+        time: Date.now()
+      };
+
+      socket.send(JSON.stringify(message));
+      document.getElementById('message').value = '';
+    }
+  </script>
+</body>
+</html>
+

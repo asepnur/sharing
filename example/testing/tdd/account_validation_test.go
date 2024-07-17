@@ -1,6 +1,9 @@
 package tdd
 
-import "testing"
+import (
+	"errors"
+	"testing"
+)
 
 // Step 2: Create a test function of Validate() function.
 func TestAccount_Validate(t *testing.T) {
@@ -9,9 +12,10 @@ func TestAccount_Validate(t *testing.T) {
 		Password string
 	}
 	tests := []struct {
-		name    string
-		fields  fields
-		wantErr bool
+		name      string
+		fields    fields
+		wantErr   bool
+		errorType error
 	}{
 		// Step 3: Create a test cases.
 		{
@@ -20,7 +24,8 @@ func TestAccount_Validate(t *testing.T) {
 				Username: "username",
 				Password: "password",
 			},
-			wantErr: false,
+			wantErr:   false,
+			errorType: nil,
 		},
 		{
 			name: "case 2: username empty, password exist",
@@ -28,7 +33,8 @@ func TestAccount_Validate(t *testing.T) {
 				Username: "",
 				Password: "password",
 			},
-			wantErr: true,
+			wantErr:   true,
+			errorType: ErrUsernameEmpty,
 		},
 		{
 			name: "case 3: username exist, password empty",
@@ -36,16 +42,8 @@ func TestAccount_Validate(t *testing.T) {
 				Username: "username",
 				Password: "",
 			},
-			wantErr: true,
-		},
-		// NOTE: this is redundant case because it's already covered in the 2nd and 3rd case.
-		{
-			name: "case 4: username exist, password empty",
-			fields: fields{
-				Username: "",
-				Password: "",
-			},
-			wantErr: true,
+			wantErr:   true,
+			errorType: ErrPasswordEmpty,
 		},
 	}
 	for _, tt := range tests {
@@ -54,8 +52,14 @@ func TestAccount_Validate(t *testing.T) {
 				Username: tt.fields.Username,
 				Password: tt.fields.Password,
 			}
-			if err := a.Validate(); (err != nil) != tt.wantErr {
+			err := a.Validate()
+			if err != nil == tt.wantErr {
 				t.Errorf("Account.Validate() error = %v, wantErr %v", err, tt.wantErr)
+			}
+			if tt.wantErr {
+				if errors.Is(err, tt.errorType) {
+					t.Errorf("Account.Type() error = %v, wantErr %v", err, tt.errorType)
+				}
 			}
 		})
 	}
