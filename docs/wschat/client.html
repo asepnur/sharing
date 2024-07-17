@@ -12,7 +12,11 @@
   <button onclick="sendMessage()">Send</button>
 
   <script>
-    const socket = new WebSocket('wss://wschat.sirogu.com/ws');
+    // Ensure the WebSocket URL uses 'wss' when the page is loaded over HTTPS
+    const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const socketUrl = `${protocol}//wschat.sirogu.com/ws`;
+    
+    const socket = new WebSocket(socketUrl);
 
     socket.onopen = function(event) {
       console.log('WebSocket connection established.');
